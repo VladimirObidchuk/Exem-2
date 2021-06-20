@@ -1,0 +1,130 @@
+.slide {
+  &__1 {
+    background: linear-gradient(
+        63.43deg,
+        rgba(85, 183, 255, 0.94),
+        rgba(125, 89, 255, 0.94)
+      ),
+      url("../img/Photo 1.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &__2 {
+    background: linear-gradient(
+        63.43deg,
+        rgba(85, 183, 255, 0.94),
+        rgba(125, 89, 255, 0.94)
+      ),
+      url("../img/Photo 2.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &__3 {
+    background: linear-gradient(
+        63.43deg,
+        rgba(85, 183, 255, 0.94),
+        rgba(125, 89, 255, 0.94)
+      ),
+      url("../img/Photo 3.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &__4 {
+    background: linear-gradient(
+        63.43deg,
+        rgba(85, 183, 255, 0.94),
+        rgba(125, 89, 255, 0.94)
+      ),
+      url("../img/Photo 4.png") center center no-repeat;
+    background-size: cover;
+  }
+}
+.header {
+  width: 100%;
+  &__first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  &__body {
+    height: 800px;
+  }
+
+  &__main {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__title {
+    font-family: "Gotham-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  &__text {
+    margin-top: 2%;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: 0.3em;
+  }
+
+  &__footer {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  &__footer:hover {
+    transform: scale(1.2);
+  }
+  &__location {
+    @include OpenSans_italic;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+  }
+}
+.slick-next,
+.slick-prev {
+  display: none;
+}
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  right: 2%;
+  top: 40%;
+  transform: translate(-50%);
+  z-index: 200;
+}
+.slick-dots li {
+  margin: 120% 0;
+
+  font-size: 0;
+}
+.slick-dots button {
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: none;
+}
+.slick-dots .slick-active button {
+  background-color: white;
+}

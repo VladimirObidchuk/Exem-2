@@ -1,0 +1,620 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:italic&display=swap);
+::after,
+::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+@font-face {
+  font-family: "Gotham-Bold", sans-serif;
+  /* Имя шрифта */
+  src: url(../fonts/Gotham-Bold.otf);
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: "Gotham-Book", sans-serif;
+  /* Имя шрифта */
+  src: url(../fonts/Gotham-Book.otf);
+  /* Путь к файлу со шрифтом */
+}
+
+.menu__main {
+  width: 100%;
+  position: absolute;
+  z-index: 200;
+  margin: 0;
+  padding: 2% 1% 0;
+}
+
+.menu__logo {
+  padding-left: 3%;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 14px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  width: 100%;
+  display: flex;
+  margin-left: 6%;
+}
+
+.menu__item:hover .menu__ping {
+  background-color: #ffffff;
+}
+
+.menu__ping {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-right: 10%;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu__social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social__item {
+  margin-left: 5%;
+}
+
+.slide__1 {
+  background: linear-gradient(63.43deg, rgba(85, 183, 255, 0.94), rgba(125, 89, 255, 0.94)), url("../img/Photo 1.png") center center no-repeat;
+  background-size: cover;
+}
+
+.slide__2 {
+  background: linear-gradient(63.43deg, rgba(85, 183, 255, 0.94), rgba(125, 89, 255, 0.94)), url("../img/Photo 2.png") center center no-repeat;
+  background-size: cover;
+}
+
+.slide__3 {
+  background: linear-gradient(63.43deg, rgba(85, 183, 255, 0.94), rgba(125, 89, 255, 0.94)), url("../img/Photo 3.png") center center no-repeat;
+  background-size: cover;
+}
+
+.slide__4 {
+  background: linear-gradient(63.43deg, rgba(85, 183, 255, 0.94), rgba(125, 89, 255, 0.94)), url("../img/Photo 4.png") center center no-repeat;
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header__body {
+  height: 800px;
+}
+
+.header__main {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header__title {
+  font-family: "Gotham-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 96px;
+}
+
+.header__text {
+  margin-top: 2%;
+  font-size: 18px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+}
+
+.header__footer {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.header__footer:hover {
+  transform: scale(1.2);
+}
+
+.header__location {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.slick-next,
+.slick-prev {
+  display: none;
+}
+
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  right: 2%;
+  top: 40%;
+  transform: translate(-50%);
+  z-index: 200;
+}
+
+.slick-dots li {
+  margin: 120% 0;
+  font-size: 0;
+}
+
+.slick-dots button {
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: none;
+}
+
+.slick-dots .slick-active button {
+  background-color: white;
+}
+
+.main__header {
+  width: 100%;
+}
+
+.main__subHeader-left {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main__subHeader-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title__text {
+  font-family: "Gotham-Bold", sans-serif;
+  font-size: 44px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin: 3% 0;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10% 0;
+}
+
+.header__line {
+  border: 1px solid #2c4058;
+  width: 50%;
+}
+
+.header__subImage-left {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: #55b7ff;
+  z-index: 1;
+}
+
+.header__subImage-right {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 520px;
+  height: 350px;
+  background: #7e5aff;
+  z-index: 1;
+}
+
+.header__image {
+  z-index: 200;
+}
+
+.header__image img {
+  width: 75%;
+  z-index: 200;
+}
+
+.header__subTitle {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 22px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin: 1% 0;
+}
+
+.header__title {
+  font-family: "Gotham-Bold", sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin: 1% 0 5%;
+}
+
+.header___subText {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4b5562;
+}
+
+.header__detail {
+  width: 190px;
+  height: 50px;
+  border: 1px solid #2c4058;
+  margin: 5% 0;
+  z-index: 900;
+}
+
+.header__detail:hover {
+  transform: scale(1.2);
+}
+
+.content__left {
+  margin-left: -20%;
+  padding-right: 43%;
+}
+
+.content__right {
+  padding-left: 23%;
+}
+
+.news {
+  background: linear-gradient(57.1deg, rgba(59, 127, 211, 0.8), rgba(35, 203, 249, 0.8)), url("../img/city 2 @2x 1.png");
+  background-size: cover;
+}
+
+.news__main {
+  width: 100%;
+}
+
+.news__cards {
+  padding-bottom: 10%;
+}
+
+.news .card__content {
+  background: white;
+  width: 370px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news .card__content:hover {
+  transform: scale(1.05);
+}
+
+.news .card__header {
+  height: 240px;
+}
+
+.news .card__main {
+  margin-top: 5%;
+  padding: 0 5%;
+}
+
+.news .card__title {
+  font-family: "Gotham-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #2c4058;
+}
+
+.news .card__text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #4b5562;
+}
+
+.news .card__footer {
+  font-family: "Gotham-Book", sans-serif;
+  margin-top: 10%;
+  padding: 0 5% 0;
+  display: flex;
+  align-items: center;
+}
+
+.news .card__subText {
+  padding: 0 5%;
+}
+
+.news .card__name {
+  font-size: 18px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #2c4058;
+  padding: 5% 0;
+}
+
+.news .card__date {
+  font-size: 14px;
+  line-height: 13px;
+  color: #55b7ff;
+}
+
+.news__main > .slick-slider {
+  margin: 0 15%;
+  position: relative;
+}
+
+.news__cards > .slick-dots li {
+  margin: 0 2%;
+}
+
+.news__cards > .slick-dots {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+  transform: translateY(-50%);
+  z-index: 800;
+}
+
+.prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 4%;
+  transform: translateY(500%);
+  z-index: 300;
+  background: url("../img/Direction=Left.png");
+  border: none;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 4%;
+  transform: translateY(500%);
+  z-index: 300;
+  background: url("../img/Direction=Right.png");
+  border: none;
+  cursor: pointer;
+}
+
+.gallery {
+  margin: 0 auto;
+}
+
+.gallery__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 0;
+}
+
+.gallery__img:hover {
+  transform: scale(1.2);
+}
+
+.gallery__header img:hover {
+  transform: scale(1.2);
+}
+
+.detail__gallery {
+  width: 190px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c4058;
+  border: 1px solid #2c4058;
+}
+
+.detail__gallery:hover {
+  transform: scale(1.1);
+  background: #85b3ec;
+}
+
+.footer {
+  height: 100%;
+}
+
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer__map {
+  width: 100%;
+  height: 700px;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(63.43deg, rgba(85, 183, 255, 0.94), rgba(125, 89, 255, 0.94)), url("../img/Rectangle 15.png") center center no-repeat;
+  background-size: cover;
+}
+
+.footer__social {
+  text-align: end;
+  width: 22%;
+}
+
+.footer__item {
+  margin-left: 8%;
+}
+
+.footer__text {
+  font-family: "Gotham-Book";
+  margin-top: 3%;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer__contact {
+  background: white;
+  position: absolute;
+  top: -50%;
+  left: 29%;
+  z-index: 200;
+  width: 770px;
+  height: 450px;
+}
+
+.contact__list {
+  font-size: 18px;
+  line-height: 18px;
+  color: #2c4058;
+  list-style: none;
+}
+
+.contact__item {
+  margin: 10% 0;
+  padding-left: 14%;
+}
+
+.contact__link {
+  text-decoration: none;
+  padding-left: 5%;
+  color: #2c4058;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.contact__name, .contact__emeil {
+  width: 300px;
+  height: 34px;
+  border: none;
+  outline: none;
+}
+
+.contact__name::placeholder, .contact__emeil::placeholder {
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #4b5562;
+  opacity: 0.5;
+  padding: 0 4%;
+}
+
+.contact__emeil {
+  margin: 6% 0 0;
+  width: 300px;
+  height: 34px;
+}
+
+.contact__line {
+  width: 80%;
+}
+
+.form__commit {
+  width: 140px;
+  height: 50px;
+  margin: 8% 0 0;
+}
+
+.title__content {
+  padding-top: 5%;
+  width: 100%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title__line {
+  border: 1px solid #2c4058;
+  width: 10%;
+  text-align: center;
+}
+
+.title__text {
+  font-family: "Gotham-Bold";
+  font-size: 44px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2c4058;
+  margin: 3% 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,118 @@
+.main {
+  &__header {
+    width: 100%;
+  }
+
+  &__subHeader-left {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  &__subHeader-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.title {
+  &__text {
+    font-family: "Gotham-Bold", sans-serif;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c4058;
+    margin: 3% 0;
+  }
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10% 0;
+}
+.header {
+  &__line {
+    border: 1px solid #2c4058;
+    width: 50%;
+  }
+  &__subImage-left {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: #55b7ff;
+    z-index: 1;
+  }
+  &__subImage-right {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 520px;
+    height: 350px;
+    background: #7e5aff;
+    z-index: 1;
+  }
+  &__image {
+    z-index: 200;
+  }
+  &__image img {
+    width: 75%;
+    z-index: 200;
+  }
+
+  &__subTitle {
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 22px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #2c4058;
+    margin: 1% 0;
+  }
+
+  &__title {
+    font-family: "Gotham-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #2c4058;
+    margin: 1% 0 5%;
+  }
+
+  &___subText {
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4b5562;
+  }
+
+  &__detail {
+    width: 190px;
+    height: 50px;
+    border: 1px solid #2c4058;
+    margin: 5% 0;
+    z-index: 900;
+  }
+  &__detail:hover {
+    transform: scale(1.2);
+  }
+
+  // &__location {
+  // }
+}
+.content {
+  &__left {
+    margin-left: -20%;
+    padding-right: 43%;
+  }
+  &__right {
+    padding-left: 23%;
+  }
+}

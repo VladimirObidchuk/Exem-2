@@ -1,0 +1,53 @@
+.menu {
+  &__main {
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+    margin: 0;
+
+    padding: 2% 1% 0;
+  }
+  &__logo {
+    padding-left: 3%;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 14px;
+    line-height: 13px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    margin-left: 6%;
+  }
+  &__item:hover .menu__ping {
+    background-color: #ffffff;
+  }
+  &__ping {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 10%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.social {
+  &__item {
+    margin-left: 5%;
+  }
+}
