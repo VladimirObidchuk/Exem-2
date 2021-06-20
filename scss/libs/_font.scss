@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:italic&display=swap);
+$font1: "Open Sans", sans-serif;
+
+@mixin OpenSans_italic {
+  font-family: $font1;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gotham-Bold", sans-serif; /* Имя шрифта */
+  src: url(../fonts/Gotham-Bold.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: "Gotham-Book", sans-serif; /* Имя шрифта */
+  src: url(../fonts/Gotham-Book.otf); /* Путь к файлу со шрифтом */
+}

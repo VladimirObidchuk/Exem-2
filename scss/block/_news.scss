@@ -1,0 +1,115 @@
+.news {
+  background: linear-gradient(
+      57.1deg,
+      rgba(59, 127, 211, 0.8),
+      rgba(35, 203, 249, 0.8)
+    ),
+    url("../img/city 2 @2x 1.png");
+  background-size: cover;
+  &__main {
+    width: 100%;
+  }
+
+  &__cards {
+    padding-bottom: 10%;
+  }
+  .card {
+    &__content {
+      background: white;
+      width: 370px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__content:hover {
+      transform: scale(1.05);
+    }
+
+    &__header {
+      height: 240px;
+    }
+
+    &__main {
+      margin-top: 5%;
+      padding: 0 5%;
+    }
+
+    &__title {
+      font-family: "Gotham-Bold", sans-serif;
+      font-size: 22px;
+      line-height: 34px;
+      text-transform: uppercase;
+      color: #2c4058;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 30px;
+      color: #4b5562;
+    }
+
+    &__footer {
+      font-family: "Gotham-Book", sans-serif;
+      margin-top: 10%;
+      padding: 0 5% 0;
+      display: flex;
+      align-items: center;
+    }
+    &__subText {
+      padding: 0 5%;
+    }
+    &__name {
+      font-size: 18px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #2c4058;
+      padding: 5% 0;
+    }
+
+    &__date {
+      font-size: 14px;
+      line-height: 13px;
+      color: #55b7ff;
+    }
+  }
+}
+
+.news__main > .slick-slider {
+  margin: 0 15%;
+  position: relative;
+}
+.news__cards > .slick-dots li {
+  margin: 0 2%;
+}
+.news__cards > .slick-dots {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+  transform: translateY(-50%);
+  z-index: 800;
+}
+.prev {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 4%;
+  transform: translateY(500%);
+  z-index: 300;
+  background: url("../img/Direction=Left.png");
+  border: none;
+  cursor: pointer;
+}
+.next {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 4%;
+  transform: translateY(500%);
+  z-index: 300;
+  background: url("../img/Direction=Right.png");
+  border: none;
+  cursor: pointer;
+}
