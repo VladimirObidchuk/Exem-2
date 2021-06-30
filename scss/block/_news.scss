@@ -5,9 +5,9 @@
       rgba(35, 203, 249, 0.8)
     ),
     url("../img/city 2 @2x 1.png");
-  background-size: cover;
   &__main {
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
   }
 
   &__cards {
@@ -16,17 +16,21 @@
   .card {
     &__content {
       background: white;
-      width: 370px;
-      height: 500px;
+      width: 600px;
+      height: 900px;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
     &__content:hover {
       transform: scale(1.05);
     }
 
-    &__header {
-      height: 240px;
+    // &__header {
+    //   height: 240px;
+    // }
+    &__header img {
+      width: 100%;
     }
 
     &__main {
@@ -50,7 +54,7 @@
 
     &__footer {
       font-family: "Gotham-Book", sans-serif;
-      margin-top: 10%;
+      margin-bottom: 5%;
       padding: 0 5% 0;
       display: flex;
       align-items: center;
@@ -74,10 +78,10 @@
   }
 }
 
-.news__main > .slick-slider {
-  margin: 0 15%;
-  position: relative;
-}
+// .news__main > .slick-slider {
+//   margin: 0 15%;
+//   position: relative;
+// }
 .news__cards > .slick-dots li {
   margin: 0 2%;
 }
@@ -93,23 +97,23 @@
 }
 .prev {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 4%;
-  transform: translateY(500%);
+  width: 100px;
+  height: 100px;
+  left: 13%;
+  transform: translateY(450%);
   z-index: 300;
-  background: url("../img/Direction=Left.png");
+  background: url("../img/Direction=Left.png") center center no-repeat;
   border: none;
   cursor: pointer;
 }
 .next {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 4%;
-  transform: translateY(500%);
+  width: 100px;
+  height: 100px;
+  right: 20%;
+  transform: translateY(450%);
   z-index: 300;
-  background: url("../img/Direction=Right.png");
+  background: url("../img/Direction=Right.png") center center no-repeat;
   border: none;
   cursor: pointer;
 }

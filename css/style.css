@@ -9,8 +9,7 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+  margin: 0 auto;
 }
 
 @font-face {
@@ -321,11 +320,11 @@ body {
 
 .news {
   background: linear-gradient(57.1deg, rgba(59, 127, 211, 0.8), rgba(35, 203, 249, 0.8)), url("../img/city 2 @2x 1.png");
-  background-size: cover;
 }
 
 .news__main {
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .news__cards {
@@ -334,18 +333,19 @@ body {
 
 .news .card__content {
   background: white;
-  width: 370px;
-  height: 500px;
+  width: 600px;
+  height: 900px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .news .card__content:hover {
   transform: scale(1.05);
 }
 
-.news .card__header {
-  height: 240px;
+.news .card__header img {
+  width: 100%;
 }
 
 .news .card__main {
@@ -369,7 +369,7 @@ body {
 
 .news .card__footer {
   font-family: "Gotham-Book", sans-serif;
-  margin-top: 10%;
+  margin-bottom: 5%;
   padding: 0 5% 0;
   display: flex;
   align-items: center;
@@ -393,11 +393,6 @@ body {
   color: #55b7ff;
 }
 
-.news__main > .slick-slider {
-  margin: 0 15%;
-  position: relative;
-}
-
 .news__cards > .slick-dots li {
   margin: 0 2%;
 }
@@ -415,24 +410,24 @@ body {
 
 .prev {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 4%;
-  transform: translateY(500%);
+  width: 100px;
+  height: 100px;
+  left: 13%;
+  transform: translateY(450%);
   z-index: 300;
-  background: url("../img/Direction=Left.png");
+  background: url("../img/Direction=Left.png") center center no-repeat;
   border: none;
   cursor: pointer;
 }
 
 .next {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: 4%;
-  transform: translateY(500%);
+  width: 100px;
+  height: 100px;
+  right: 20%;
+  transform: translateY(450%);
   z-index: 300;
-  background: url("../img/Direction=Right.png");
+  background: url("../img/Direction=Right.png") center center no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -452,8 +447,23 @@ body {
   transform: scale(1.2);
 }
 
+.gallery__img {
+  width: 100%;
+}
+
+.gallery__header img {
+  width: 49%;
+}
+
 .gallery__header img:hover {
   transform: scale(1.2);
+}
+
+.gallery .container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .detail__gallery {
@@ -501,7 +511,7 @@ body {
 
 .footer__social {
   text-align: end;
-  width: 22%;
+  width: 7%;
 }
 
 .footer__item {
@@ -520,7 +530,6 @@ body {
   background: white;
   position: absolute;
   top: -50%;
-  left: 29%;
   z-index: 200;
   width: 770px;
   height: 450px;
