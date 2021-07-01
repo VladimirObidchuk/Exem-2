@@ -6,8 +6,8 @@
     ),
     url("../img/city 2 @2x 1.png");
   &__main {
-    width: 60%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0 9%;
   }
 
   &__cards {
@@ -16,8 +16,8 @@
   .card {
     &__content {
       background: white;
-      width: 600px;
-      height: 900px;
+      width: 400px;
+      height: 500px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -25,10 +25,6 @@
     &__content:hover {
       transform: scale(1.05);
     }
-
-    // &__header {
-    //   height: 240px;
-    // }
     &__header img {
       width: 100%;
     }
@@ -77,11 +73,6 @@
     }
   }
 }
-
-// .news__main > .slick-slider {
-//   margin: 0 15%;
-//   position: relative;
-// }
 .news__cards > .slick-dots li {
   margin: 0 2%;
 }
@@ -91,16 +82,16 @@
   list-style: none;
   position: absolute;
   top: 85%;
-  left: 45%;
+  left: 40%;
   transform: translateY(-50%);
   z-index: 800;
 }
 .prev {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  left: 13%;
-  transform: translateY(450%);
+  width: 50px;
+  height: 50px;
+  left: 2%;
+  transform: translateY(500%);
   z-index: 300;
   background: url("../img/Direction=Left.png") center center no-repeat;
   border: none;
@@ -108,10 +99,10 @@
 }
 .next {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  right: 20%;
-  transform: translateY(450%);
+  width: 50px;
+  height: 50px;
+  right: 2%;
+  transform: translateY(500%);
   z-index: 300;
   background: url("../img/Direction=Right.png") center center no-repeat;
   border: none;

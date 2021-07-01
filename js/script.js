@@ -7,7 +7,7 @@ $(".header__content").slick({
     fade: true
 });
 $(".news__cards").slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     dots: true,
     slidesToShow: 3,
@@ -28,18 +28,6 @@ const marker = new google.maps.Marker({
 
 const $formElem = $('.contact__form');
 const $formBtn = $('.form__commi');
-// $formElem.onsubmit = async (e) => {
-//     e.preventDefault();
-
-//     let response = await fetch('https://mail.google.com/', {
-//         method: 'POST',
-//         body: new FormData($formElem)
-//     });
-
-//     let result = await response.json();
-
-//     alert(result.message);
-// };
 
 $formElem.ready(function () {
     $formBtn.click(
