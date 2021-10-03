@@ -44,6 +44,11 @@ body {
     width: 100%;
     margin-bottom: 33px;
   }
+  &__content-footer {
+    padding: 56px 0 0px;
+    width: 98%;
+    margin-bottom: 0;
+  }
   &__title {
     display: flex;
     flex-direction: column;
@@ -57,6 +62,9 @@ body {
   }
   &__line-gallery {
     border: 1px solid $butt;
+  }
+  &__line-footer {
+    width: 20%;
   }
   &__text {
     font-family: "Gotham-Bold";
@@ -76,5 +84,9 @@ body {
   &__text-gallery {
     margin: 26px 0;
     letter-spacing: 0;
+  }
+  &__text-footer {
+    margin: 26px 0;
+    letter-spacing: 0.03em;
   }
 }

@@ -77,6 +77,10 @@ body {
   margin-left: 5%;
 }
 
+.footer__item-menu {
+  margin-left: 18px;
+}
+
 .slide__1 {
   background: linear-gradient(63.43deg, rgba(85, 183, 255, 0.94), rgba(125, 89, 255, 0.94)), url("../img/Photo 1.png") center center no-repeat;
   background-size: cover;
@@ -495,7 +499,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 54px 10px 80px 0;
+  margin: 54px 10px 140px 0;
 }
 
 .gallery__img:hover {
@@ -560,7 +564,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 108%;
   height: 520px;
   background: linear-gradient(63.43deg, rgba(85, 183, 255, 0.94), rgba(125, 89, 255, 0.94)), url("../img/Rectangle 15.png") center center no-repeat;
   background-size: cover;
@@ -568,25 +572,28 @@ body {
 
 .footer__social {
   text-align: end;
-  width: 21%;
+  width: 20%;
+  margin: 0 9px 61px 0;
 }
 
 .footer__item {
-  margin-left: 11%;
+  margin-left: 15px;
 }
 
 .footer__text {
   font-family: "Gotham-Book";
-  margin-top: 3%;
+  margin: 34px 0 7px 0px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  letter-spacing: 0.08em;
 }
 
 .footer__contact {
   background: white;
   position: absolute;
-  top: -50%;
+  top: -58%;
+  left: 402px;
   z-index: 200;
   width: 770px;
   height: 450px;
@@ -597,11 +604,12 @@ body {
   line-height: 18px;
   color: #2c4058;
   list-style: none;
+  letter-spacing: 0.08em;
 }
 
 .contact__item {
-  margin: 10% 0;
-  padding-left: 14%;
+  margin: 7% 0 37px;
+  padding-left: 13%;
 }
 
 .contact__link {
@@ -615,7 +623,8 @@ body {
   flex-direction: column;
   align-items: flex-end;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-start;
+  margin-top: 23px;
 }
 
 .contact__name, .contact__emeil {
@@ -635,7 +644,7 @@ body {
 }
 
 .contact__emeil {
-  margin: 6% 0 0;
+  margin: 36px 0 0;
   width: 300px;
   height: 34px;
 }
@@ -647,7 +656,7 @@ body {
 .form__commit {
   width: 140px;
   height: 50px;
-  margin: 8% 0 0;
+  margin: 27px 0 43px 0;
 }
 
 .container {
@@ -677,6 +686,12 @@ body {
   margin-bottom: 33px;
 }
 
+.title__content-footer {
+  padding: 56px 0 0px;
+  width: 98%;
+  margin-bottom: 0;
+}
+
 .title__title {
   display: flex;
   flex-direction: column;
@@ -692,6 +707,10 @@ body {
 
 .title__line-gallery {
   border: 1px solid #2c4058;
+}
+
+.title__line-footer {
+  width: 20%;
 }
 
 .title__text {
@@ -714,5 +733,10 @@ body {
 .title__text-gallery {
   margin: 26px 0;
   letter-spacing: 0;
+}
+
+.title__text-footer {
+  margin: 26px 0;
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=style.css.map */
