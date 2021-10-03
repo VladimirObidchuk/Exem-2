@@ -4,16 +4,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2% 0;
+    margin: 54px 10px 80px 0;
   }
   &__img:hover {
     transform: scale(1.2);
   }
   &__img {
-    width: 100%;
+    margin-left: 188px;
+    width: 75%;
   }
   &__header img {
-    width: 49%;
+    width: 37%;
   }
   &__header img:hover {
     transform: scale(1.2);
@@ -35,6 +36,7 @@
     text-transform: uppercase;
     color: #2c4058;
     border: 1px solid #2c4058;
+    letter-spacing: 0.04em;
   }
   &__gallery:hover {
     transform: scale(1.1);
