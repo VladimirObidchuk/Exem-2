@@ -6,21 +6,21 @@
     ),
     url("../img/city 2 @2x 1.png");
   &__main {
-    width: 90%;
-    margin: 0 9%;
+    width: 99%;
+    // margin: 0 9%;
   }
 
   &__cards {
-    padding-bottom: 10%;
+    padding: 0 194px 215px 201px;
   }
   .card {
     &__content {
       background: white;
-      width: 400px;
+      width: 371px;
       height: 500px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      // justify-content: space-between;
     }
     &__content:hover {
       transform: scale(1.05);
@@ -30,8 +30,8 @@
     }
 
     &__main {
-      margin-top: 5%;
-      padding: 0 5%;
+      // margin-top: 5%;
+      padding: 21px 21px 0;
     }
 
     &__title {
@@ -40,49 +40,56 @@
       line-height: 34px;
       text-transform: uppercase;
       color: #2c4058;
+      letter-spacing: 0.025em;
     }
 
     &__text {
       font-size: 18px;
-      line-height: 30px;
+      line-height: 29px;
       color: #4b5562;
+      letter-spacing: 0.11em;
+      padding: 0px 0 33px;
     }
 
     &__footer {
       font-family: "Gotham-Book", sans-serif;
       margin-bottom: 5%;
-      padding: 0 5% 0;
+      padding: 0 6% 0;
       display: flex;
       align-items: center;
     }
     &__subText {
-      padding: 0 5%;
+      padding: 0 19px;
     }
     &__name {
       font-size: 18px;
       line-height: 17px;
       text-transform: uppercase;
       color: #2c4058;
-      padding: 5% 0;
+      padding: 3% 0;
+      // margin-top: -6px;
+      letter-spacing: 0.027em;
     }
 
     &__date {
       font-size: 14px;
       line-height: 13px;
       color: #55b7ff;
+      margin: 2px 0 3px 2px;
+      letter-spacing: 0.05em;
     }
   }
 }
 .news__cards > .slick-dots li {
-  margin: 0 2%;
+  margin: 0 30px;
 }
 .news__cards > .slick-dots {
   display: flex;
   flex-direction: row;
   list-style: none;
   position: absolute;
-  top: 85%;
-  left: 40%;
+  top: 79%;
+  left: 41%;
   transform: translateY(-50%);
   z-index: 800;
 }
@@ -90,8 +97,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 2%;
-  transform: translateY(500%);
+  left: 98px;
+  transform: translateY(454%);
   z-index: 300;
   background: url("../img/Direction=Left.png") center center no-repeat;
   border: none;
@@ -101,8 +108,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  right: 2%;
-  transform: translateY(500%);
+  right: 106px;
+  transform: translateY(452%);
   z-index: 300;
   background: url("../img/Direction=Right.png") center center no-repeat;
   border: none;

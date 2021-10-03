@@ -34,6 +34,11 @@ body {
     align-items: center;
     text-align: center;
   }
+  &__content-news {
+    padding: 135px 0 42px;
+    width: 100%;
+    margin-bottom: 33px;
+  }
   &__title {
     display: flex;
     flex-direction: column;
@@ -42,6 +47,11 @@ body {
   }
   &__line {
     border: 1px solid #2c4058;
+    width: 10%;
+    text-align: center;
+  }
+  &__line {
+    border: 1px solid $color;
     width: 10%;
     text-align: center;
   }
@@ -54,5 +64,10 @@ body {
     color: #2c4058;
     margin: 26px 0;
     letter-spacing: 3px;
+  }
+  &__text-news {
+    color: $color;
+    margin: 26px 0;
+    letter-spacing: 1px;
   }
 }

@@ -7,7 +7,7 @@ $(".header__content").slick({
   fade: true,
 });
 $(".news__cards").slick({
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   dots: true,
   slidesToShow: 3,
