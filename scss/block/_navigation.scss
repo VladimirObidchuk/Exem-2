@@ -71,19 +71,19 @@
   }
 
   &__text {
-    margin-top: 2%;
+    margin: 23px 0 0 264px;
     font-size: 18px;
     line-height: 17px;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.35em;
   }
 
   &__footer {
     display: block;
     position: absolute;
-    bottom: 5%;
+    bottom: 30px;
     text-align: center;
     left: 0;
-    right: 0;
+    right: 6px;
     cursor: pointer;
   }
   &__footer:hover {
@@ -96,6 +96,7 @@
     font-size: 18px;
     line-height: 30px;
     color: #000000;
+    padding: 35px 0 0 2px;
   }
 }
 .slick-next,
@@ -107,20 +108,19 @@
   flex-direction: column;
   list-style: none;
   position: absolute;
-  right: 2%;
-  top: 40%;
+  right: 27px;
+  top: 296px;
   transform: translate(-50%);
   z-index: 200;
 }
 .slick-dots li {
-  margin: 120% 0;
-
+  margin: 158% 0;
   font-size: 0;
 }
 .slick-dots button {
   cursor: pointer;
-  width: 13px;
-  height: 13px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   border: 3px solid #fff;
   background: none;

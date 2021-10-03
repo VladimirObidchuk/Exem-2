@@ -4,18 +4,20 @@
   }
   .container {
     max-width: 100%;
+    margin: 0;
   }
 
   &__subHeader-left {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     height: 100%;
   }
   &__subHeader-right {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     height: 100%;
+    margin: 158px 0 95px 0;
   }
 }
 .title {
@@ -33,7 +35,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5% 0;
 }
 .header {
   &__line {
@@ -41,24 +42,39 @@
     width: 50%;
   }
   &__subImage-left {
-    margin: -10% -36% 0;
-    width: 500px;
-    height: 400px;
+    margin: 0 0 0;
+    width: 561px;
+    height: 472px;
     background: #55b7ff;
     z-index: 1;
+    position: relative;
   }
   &__subImage-right {
-    margin: -10% -36% 0;
-    width: 500px;
-    height: 400px;
+    margin: 0 0 75px;
+    width: 570px;
+    height: 470px;
     background: #7e5aff;
     z-index: 1;
   }
   &__image {
     z-index: 200;
+    position: absolute;
+    margin: 144px 0 0 191px;
   }
   &__image img {
-    height: 400px;
+    height: 472px;
+    width: 631px;
+    z-index: 200;
+  }
+  &__image1 {
+    z-index: 200;
+    position: absolute;
+    // margin: 144px 0 0 0;
+    padding: 67px 198px 0px 0;
+  }
+  &__image1 img {
+    width: 630px;
+    height: 470px;
     z-index: 200;
   }
 
@@ -68,7 +84,12 @@
     line-height: 21px;
     text-transform: uppercase;
     color: #2c4058;
-    margin: 1% 0;
+    margin: 7px 0 0;
+    letter-spacing: 0.04em;
+  }
+  &__subTitle-left {
+    margin: 21px 0 0;
+    letter-spacing: 0.04em;
   }
 
   &__title {
@@ -78,22 +99,53 @@
     line-height: 53px;
     text-transform: uppercase;
     color: #2c4058;
-    margin: 1% 0 5%;
+    margin: 2px 0 0px 0;
+    color: $block;
+    letter-spacing: 0.035em;
+  }
+  &__title-left {
+    letter-spacing: 0.02em;
+    padding-top: 4px;
+  }
+  &__title1 {
+    font-family: "Gotham-Bold", sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #2c4058;
+    margin: 13px 0 14px 255px;
+    color: $color;
+    letter-spacing: 2px;
   }
 
-  &___subText {
+  &__subText {
     font-family: "Gotham-Book", sans-serif;
     font-size: 18px;
     line-height: 30px;
-    color: #4b5562;
+    color: $butt;
+    letter-spacing: 0.057em;
+    width: 73%;
+    padding: 17px 0 0;
+  }
+  &__subText-left {
+    letter-spacing: 0.05em;
+    width: 85%;
   }
 
   &__detail {
     width: 190px;
     height: 50px;
     border: 1px solid #2c4058;
-    margin: 5% 0;
+    margin: 32px 0 10px;
+    padding: 0 0 0;
     z-index: 900;
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 14px;
+    line-height: 13px;
+    color: $butt;
+    letter-spacing: 0.057em;
+    text-transform: uppercase;
   }
   &__detail:hover {
     transform: scale(1.2);
@@ -101,10 +153,11 @@
 }
 .content {
   &__left {
-    padding-right: 43%;
+    padding: 0 0 0 9%;
+    margin: 17% 0 0;
   }
   &__right {
-    align-items: flex-end;
-    padding-left: 30%;
+    padding-left: 190px;
+    margin: 13% 0 0;
   }
 }

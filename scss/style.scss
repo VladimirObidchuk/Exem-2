@@ -7,7 +7,7 @@
 }
 body {
   //   height: 100vh;
-  //   width: 100vw;
+  max-width: 1600px;
   margin: 0 auto;
 }
 @import "./libs/font";
@@ -19,15 +19,15 @@ body {
 @import "../scss/block/news";
 @import "../scss/block/gallery";
 @import "../scss/block/footer";
-// @import "../scss/block/travel1";
-// @import "../scss/block/reviews";
-// @import "../scss/block/contact";
-//
+
+.container {
+  margin: 0;
+}
 .title {
   &__content {
-    padding-top: 5%;
+    padding: 6% 0 42px;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 33px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,6 +52,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #2c4058;
-    margin: 3% 0;
+    margin: 26px 0;
+    letter-spacing: 3px;
   }
 }
