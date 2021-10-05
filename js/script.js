@@ -1,5 +1,5 @@
 $(".header__content").slick({
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 3000,
   dots: true,
   prevArrow: false,
@@ -7,7 +7,7 @@ $(".header__content").slick({
   fade: true,
 });
 $(".news__cards").slick({
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 3000,
   dots: true,
   slidesToShow: 3,
